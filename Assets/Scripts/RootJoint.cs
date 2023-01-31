@@ -43,8 +43,8 @@ public class RootJoint : MonoBehaviour
 			endPoint = Vector3.MoveTowards(endPoint, mousePos, moveSpeed*Time.deltaTime);
 			if(Vector3.Distance(endPoint, startPoint) > maxLength)
 			{
-				/*Vector3 direction = (endPoint - startPoint).normalized;
-				endPoint = startPoint + (direction * maxLength);*/
+				Vector3 direction = (endPoint - startPoint).normalized;
+				endPoint = startPoint + (direction * maxLength);
 			}
 			lineRenderer.SetPosition(1, endPoint-this.transform.position);
 			clickBoxTransform.position = endPoint;
@@ -59,22 +59,26 @@ public class RootJoint : MonoBehaviour
 			Collider[] colliders = Physics.OverlapBox(endPoint, new Vector3(0.5f,0.5f,0.5f), Quaternion.identity, layerMask);
 			if(colliders.Length > 0)
 			{
-				Collider collider = colliders[0];
-				resourceNode = collider.GetComponent<ResourceNode>();
-				if (resourceNode != null)
+				//foreach(Collider in Collider)
 				{
-					drain = resourceNode.AttachRoot(this);
-					GameManager.Instance.AddDrain(drain);
+					Collider collider = colliders[0];
+					resourceNode = collider.GetComponent<ResourceNode>();
+					if (resourceNode != null)
+					{
+						drain = resourceNode.AttachRoot(this);
+						GameManager.Instance.AddDrain(drain);
+					}
 				}
+				
 			}	
 		}
 		else
 		{
-			if(resourceNode!= null)
+			if(drain != null)
 			{
 				resourceNode.DetachRoot(this);
 				GameManager.Instance.RemoveDrain(drain);
-				resourceNode= null;
+				drain = null;
 			}
 		}
 		isCursorLocked = !isCursorLocked;
