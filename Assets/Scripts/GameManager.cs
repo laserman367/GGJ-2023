@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField]
 	private TypeFloatDict resources;
 	private float oxygenGain = 5;
+	private float carbonGain = 2.5f;
 	private bool isMovingRoot = false;
 	private RootJoint attachedJoint;
 	private int layerMask;
@@ -43,7 +44,8 @@ public class GameManager : MonoBehaviour
 			if (kvp.Value > 0) resources[kvp.Key] += totalDrain[kvp.Key] *Time.deltaTime;
 		}
 		resources[ResourceType.OXYGEN] += oxygenGain * Time.deltaTime;
-		if(Input.GetMouseButtonDown(0))
+		resources[ResourceType.CARBON] += carbonGain * Time.deltaTime;
+		if (Input.GetMouseButtonDown(0))
 		{
 			HandleClick();
 		}
@@ -65,7 +67,7 @@ public class GameManager : MonoBehaviour
 	{
 		foreach (KeyValuePair<ResourceType, float> kvp in drain)
 		{
-			if (kvp.Value > 0) totalDrain[kvp.Key] += kvp.Value;
+			if (kvp.Value > 0) totalDrain[kvp.Key] -= kvp.Value;
 		}
 	}
 

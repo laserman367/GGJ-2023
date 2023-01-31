@@ -56,17 +56,18 @@ public class RootJoint : MonoBehaviour
 	{
 		if(isCursorLocked)
 		{
-			Collider[] colliders = Physics.OverlapBox(endPoint, new Vector3(0.5f,0.5f,0.5f), Quaternion.identity, layerMask);
+			Collider[] colliders = Physics.OverlapBox(endPoint, new Vector3(0.2f,0.2f,0.2f), Quaternion.identity, layerMask);
 			if(colliders.Length > 0)
 			{
-				//foreach(Collider in Collider)
+				foreach(Collider collider in colliders)
 				{
-					Collider collider = colliders[0];
+
 					resourceNode = collider.GetComponent<ResourceNode>();
 					if (resourceNode != null)
 					{
 						drain = resourceNode.AttachRoot(this);
 						GameManager.Instance.AddDrain(drain);
+						break;
 					}
 				}
 				
