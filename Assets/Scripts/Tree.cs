@@ -23,9 +23,10 @@ public class Tree : MonoBehaviour
         {
             float toHeal = Mathf.Min(maxHealth - currHealth, regenSpeed*Time.deltaTime);
 
-            float carbonDrained = GameManager.Instance.TryDrain(ResourceType.CARBON, toHeal*regenCost);
-            currHealth = Mathf.Clamp((carbonDrained / regenCost) + currHealth, -1, maxHealth);
-
+            if(GameManager.Instance.TryDrain(ResourceType.CARBON, toHeal*regenCost))
+            {
+				currHealth = Mathf.Clamp(toHeal + currHealth, -1, maxHealth);
+			}
 		}
     }
     public void Damage(float damage)

@@ -66,7 +66,7 @@ public class RootJoint : MonoBehaviour
 					if (resourceNode != null)
 					{
 						drain = resourceNode.AttachRoot(this);
-						GameManager.Instance.AddDrain(drain);
+						GameManager.Instance.AddRootResource(drain);
 						break;
 					}
 				}
@@ -78,7 +78,7 @@ public class RootJoint : MonoBehaviour
 			if(drain != null)
 			{
 				resourceNode.DetachRoot(this);
-				GameManager.Instance.RemoveDrain(drain);
+				GameManager.Instance.RemoveRootResource(drain);
 				drain = null;
 			}
 		}

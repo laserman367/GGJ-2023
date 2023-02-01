@@ -50,20 +50,42 @@ public class GameManager : MonoBehaviour
 			HandleClick();
 		}
 	}
-	public float TryDrain(ResourceType type, float value) 
+	public bool TryDrainGroup(Dictionary<ResourceType, float> group)
+	{
+		if (group == null) return false;
+		foreach (KeyValuePair<ResourceType,float> kvp in group)
+		{
+			if (resources[kvp.Key] < kvp.Value) return false;
+		}
+		foreach (KeyValuePair<ResourceType, float> kvp in group)
+		{
+			resources[kvp.Key] -= kvp.Value;
+		}
+		return true;
+	}
+	public bool TryDrain(ResourceType type, float value)
+	{
+		if(resources[type]>value)
+		{
+			resources[type] -= value;
+			return true;
+		}
+		return false;
+	}
+	public float DrainUpTo(ResourceType type, float value) 
 	{
 		float drained = Mathf.Min(value, resources[type]);
 		if (drained > 0)  resources[type] -= drained;
 		return drained;
 	}
-	public void AddDrain(Dictionary<ResourceType, float> drain)
+	public void AddRootResource(Dictionary<ResourceType, float> drain)
 	{
 		foreach (KeyValuePair<ResourceType, float> kvp in drain)
 		{
 			if (kvp.Value > 0) totalDrain[kvp.Key] += kvp.Value;
 		}
 	}
-	public void RemoveDrain(Dictionary<ResourceType, float> drain)
+	public void RemoveRootResource(Dictionary<ResourceType, float> drain)
 	{
 		foreach (KeyValuePair<ResourceType, float> kvp in drain)
 		{
