@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
+	
 	private static GameManager _instance;
 	public static GameManager Instance 
 	{ 
@@ -25,6 +27,12 @@ public class GameManager : MonoBehaviour
 	private RootJoint attachedJoint;
 	private int layerMask;
 	Dictionary<ResourceType, float> totalDrain = new Dictionary<ResourceType, float>();
+	private bool isAddingRoot = false;
+	[SerializeField]
+	private float rootCost = 30;
+
+	[SerializeField]
+	private GameObject rootPrefab = null;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -34,6 +42,7 @@ public class GameManager : MonoBehaviour
 			totalDrain.Add(kvp.Key, 0);
 		}
 		layerMask = LayerMask.GetMask("UI");
+		if (rootPrefab == null) Debug.LogWarning("Root prefab not set in gamemanager!");
 	}
 
 	// Update is called once per frame
@@ -48,6 +57,11 @@ public class GameManager : MonoBehaviour
 		if (Input.GetMouseButtonDown(0))
 		{
 			HandleClick();
+		}
+		if(isAddingRoot && attachedJoint != null)
+		{
+			Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			attachedJoint.transform.position = new Vector3(mousePos.x, mousePos.y, attachedJoint.transform.position.z);
 		}
 	}
 	public bool TryDrainGroup(Dictionary<ResourceType, float> group)
@@ -93,9 +107,38 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public void CreateRoot()
+	{
+		if (isMovingRoot || rootPrefab == null || !TryDrain(ResourceType.CARBON, rootCost)) return;
+		isAddingRoot = true;
+		GameObject rootObj = Instantiate(rootPrefab);
+		attachedJoint = rootObj.GetComponent<RootJoint>();
+	}
 	private void HandleClick()
 	{
-		if (!isMovingRoot)
+		if (isAddingRoot) 
+		{
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hitInfo;
+			if (Physics.Raycast(ray, out hitInfo, 100, layerMask))
+			{
+				RootJoint joint = null;
+				if (hitInfo.transform.parent != null)
+				{
+					joint = hitInfo.transform.parent.gameObject.GetComponent<RootJoint>();
+				}
+				if (joint != null)
+				{
+					joint.AddChild(attachedJoint);
+					attachedJoint.SetParent(joint);
+					isAddingRoot = false;
+					isMovingRoot = true;
+					attachedJoint.UpdatePositions();
+					attachedJoint.ToggleDrag();
+				}
+			}
+		}
+		else if (!isMovingRoot)
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hitInfo;
