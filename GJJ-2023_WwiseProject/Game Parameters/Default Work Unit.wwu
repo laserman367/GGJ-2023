@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6317D9F6-5EA3-45EA-8693-29EBF58BCF92}" SchemaVersion="110">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{6317D9F6-5EA3-45EA-8693-29EBF58BCF92}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6317D9F6-5EA3-45EA-8693-29EBF58BCF92}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Height" ID="{DD59DEAE-823F-410F-AF4F-2ADE8F85E302}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="5"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Health" ID="{6ECEDE82-96A7-47F8-8BAF-41656054E770}">
+					<PropertyList>
+						<Property Name="FilterTimeUp" Type="Real64" Value="9"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="EnemyNumber" ID="{1F58C3EA-F276-44EC-AA5F-BC4AF69EC7D5}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="20"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

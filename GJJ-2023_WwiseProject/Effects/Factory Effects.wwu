@@ -1579,7 +1579,47 @@
 										<Property Name="ModDepth" Type="Real32" Value="2"/>
 										<Property Name="ModFrequency" Type="Real32" Value="0.25"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
+										<Property Name="OutputLevel" Type="Real32" Value="1"/>
 									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{1455721E-FD83-4CB2-9F0F-1ECC2C414000}" ShortID="185624341">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="ModDepth"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="EnemyNumber" ID="{1F58C3EA-F276-44EC-AA5F-BC4AF69EC7D5}" WorkUnitID="{6317D9F6-5EA3-45EA-8693-29EBF58BCF92}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{BF68E509-8947-456B-BA6C-FA773AC6E66A}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-100</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>20</XPos>
+																				<YPos>90.90909</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Effect>
 							</ChildrenList>
 						</Folder>
