@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E2127D99-FB60-B4DB-6453-D5E0E49C53CC}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,8 +21,13 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="622737992" Name="EnemyNumber"/>
+				<GameParameter Id="1279776192" Name="Height"/>
+				<GameParameter Id="3677180323" Name="Health"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{E580E77D-86DD-DEF5-D213-FF5EDCB32B7E}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{D360F9D8-1C64-B7BC-99D9-C325117CD396}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
@@ -53,7 +58,11 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1279776192" Name="Height"/>
+				<GameParameter Id="3677180323" Name="Health"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7ACD3F31-92DC-D3CA-8451-0EC516CE7962}</FileHash>
+	<FileHash>{1EEA21A8-3970-EC6A-F410-6F3A25F0F7E0}</FileHash>
 </SoundBanksInfo>

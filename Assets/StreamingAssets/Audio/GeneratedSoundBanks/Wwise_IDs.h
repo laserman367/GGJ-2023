@@ -16,6 +16,13 @@ namespace AK
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
     } // namespace EVENTS
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID ENEMYNUMBER = 622737992U;
+        static const AkUniqueID HEALTH = 3677180323U;
+        static const AkUniqueID HEIGHT = 1279776192U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

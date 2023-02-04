@@ -1,6 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1279776192	Height			\Default Work Unit\Height	
+	3677180323	Health			\Default Work Unit\Health	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	791871811	Perc	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Mac\SFX\Perc_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Stems\Perc		2126685
 	891896344	Melody	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Mac\SFX\Melody_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Stems\Melody		989700
