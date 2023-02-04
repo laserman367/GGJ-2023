@@ -46,14 +46,14 @@ public class BasicEnemy : MonoBehaviour
 				Attack();
 			}
 		}
-		else this.transform.Translate(isLeftOfTree ? 1 : -1 * movementSpeed * Time.deltaTime * speedMultiplier, 0, 0);
+		else this.transform.Translate((isLeftOfTree ? 1 : -1) * movementSpeed * Time.deltaTime * speedMultiplier, 0, 0);
     }
 	public void Damage(float damage)
 	{
 		currHealth -= damage;
 		if (currHealth <= 0) 
 		{
-			GameObject.Destroy(this);
+			EnemyManager.Instance.RemoveEnemy(this);
 		}
 	}
 	private void Attack()
@@ -66,7 +66,7 @@ public class BasicEnemy : MonoBehaviour
 		isLeftOfTree = this.transform.position.x < tree.transform.position.x;
 		if (isLeftOfTree)
 		{
-			spriteRenderer.flipY = true;
+			spriteRenderer.flipX = true;
 		}
 	}
 }

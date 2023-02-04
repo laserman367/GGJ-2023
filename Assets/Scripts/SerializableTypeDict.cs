@@ -11,3 +11,6 @@ public class SimpleTypeFloatDict : SerializableDictionary<SimplifiedResourceType
 public class TypeFloatDict : SerializableDictionary<ResourceType, float>
 {
 }
+public class GameObjectIntDict : SerializableDictionary<GameObject, int>
+{
+}
