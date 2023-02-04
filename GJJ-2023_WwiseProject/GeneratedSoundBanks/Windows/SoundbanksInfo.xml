@@ -27,10 +27,14 @@
 				<GameParameter Id="3677180323" Name="Health"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{D360F9D8-1C64-B7BC-99D9-C325117CD396}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{1A836EC6-6A8E-C057-080F-C4294BBF7D3E}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
+				<File Id="464707217" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bugs.wav</ShortName>
+					<CachePath>SFX/Bugs_179463A7.wem</CachePath>
+				</File>
 				<File Id="791871811" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Perc.wav</ShortName>
 					<CachePath>SFX/Perc_179463A7.wem</CachePath>
@@ -51,6 +55,7 @@
 			<Events>
 				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="464707217"/>
 						<MediaRef Id="791871811"/>
 						<MediaRef Id="891896344"/>
 						<MediaRef Id="927853568"/>
@@ -59,10 +64,11 @@
 				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="622737992" Name="EnemyNumber"/>
 				<GameParameter Id="1279776192" Name="Height"/>
 				<GameParameter Id="3677180323" Name="Health"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B0DF6BD8-82F1-065C-3F12-091EAB0F6097}</FileHash>
+	<FileHash>{B0E0CFC4-D4C3-4015-05EC-DD00DE2D9953}</FileHash>
 </SoundBanksInfo>
