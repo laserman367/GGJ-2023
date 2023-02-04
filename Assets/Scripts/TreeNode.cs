@@ -7,14 +7,36 @@ public class TreeNode : MonoBehaviour
     // Start is called before the first frame update
     private BasicDefense attachedDefense = null;
     [SerializeField] 
-    private GameObject canvas = null;
-    void Start()
+    private GameObject upgradeUI = null;
+    [SerializeField]
+	Sprite[] sprites = null;
+	[SerializeField]
+	private bool isAvailable = false;
+	[SerializeField]
+	SpriteRenderer spriteRenderer = null;
+	private bool isUpgrading = false;
+	void Start()
     {
-        if (canvas == null) Debug.LogError(this.gameObject.name + " doesn't have canvas set in Editor. Drag it into the script.");
-    }
+        if (upgradeUI == null) Debug.LogError(this.gameObject.name + " doesn't have canvas set in Editor. Drag it into the script.");
+		if (spriteRenderer == null) Debug.LogError(this.gameObject.name + " doesn't have sprite renderer set in Editor. Drag it into the script.");
+		else
+		{
+			if (isAvailable) spriteRenderer.sprite = sprites[1];
+			else spriteRenderer.sprite = sprites[0];
+		}
+		if(sprites==null || sprites.Length<3) Debug.LogError(this.gameObject.name + " doesn't have all sprites set in Editor. Drag them into the script.");
+	}
+	private void OnMouseEnter()
+	{
+		if (!isUpgrading) spriteRenderer.sprite = sprites[isAvailable ? 2 : 0];
+	}
+	private void OnMouseExit()
+	{
+		if(!isUpgrading) spriteRenderer.sprite = sprites[isAvailable ? 1 : 0];
+	}
 
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
         
     }
@@ -30,5 +52,9 @@ public class TreeNode : MonoBehaviour
         attachedDefense = null;
 		return oldDefense;
 	}
-
+	public void HandleClick()
+	{
+		upgradeUI.SetActive(!isUpgrading);
+		isUpgrading = !isUpgrading;
+	}
 }
