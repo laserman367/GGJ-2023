@@ -125,8 +125,50 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: f6d91763a35eea45869329ebf58bcf92
     GuidInternal: 
-    m_lastTime: -8585260888514690836
-    List: []
+    m_lastTime: -8585260799092027630
+    List:
+    - name: EnemyNumber
+      guid: eac3581f76f2ec44aa5fbc4af69ec7d5
+      id: 622737992
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6d91763a35eea45869329ebf58bcf92
+      - ElementName: EnemyNumber
+        ObjectType: 13
+        guid: eac3581f76f2ec44aa5fbc4af69ec7d5
+      Path: Game Parameters\Default Work Unit\EnemyNumber
+    - name: Health
+      guid: 82dece6ea796f8478baf41656054e770
+      id: 3677180323
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6d91763a35eea45869329ebf58bcf92
+      - ElementName: Health
+        ObjectType: 13
+        guid: 82dece6ea796f8478baf41656054e770
+      Path: Game Parameters\Default Work Unit\Health
+    - name: Height
+      guid: aede59dd3f820f41af4f2ade8f85e302
+      id: 1279776192
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6d91763a35eea45869329ebf58bcf92
+      - ElementName: Height
+        ObjectType: 13
+        guid: aede59dd3f820f41af4f2ade8f85e302
+      Path: Game Parameters\Default Work Unit\Height
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -169,9 +211,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585260888514600751
     List: []
-  ExpandedFileSystemItemIds: 02000000060000000700000008000000090000000a000000
+  ExpandedFileSystemItemIds: 02000000060000000700000008000000090000000a0000000b0000000c000000
   ExpandedWaapiItemIds: 02000000060000000700000008000000090000000a0000000b0000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
