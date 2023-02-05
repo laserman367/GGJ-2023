@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_SFX = 3141129795U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

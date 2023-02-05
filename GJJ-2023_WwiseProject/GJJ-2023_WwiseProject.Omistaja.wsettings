@@ -5,6 +5,7 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\Originals\SFX\"/>
 				<Property Name="Event Action List\{0BA74D1E-9B69-46DA-AA75-F2E46561E1F2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E1FC76C9-F75E-4B71-A3CD-EE045748015D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -27,7 +28,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="fK1agsS470is7jQnF1dbkg=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="AI81xbIIHkenRceQq6hJBAEAENcjAAAAwKScDv1/AAA43N0E2QEAAAAAAADZAQAAwKScDv1/AAAEkpQR/X8AAOCG5R/ZAQAAAAAAANkBAAAIAAAAAAAAANjhENcjAAAAAACpEf1/AAAfAakR/X8AAAAAqRH9fwAAwKScDv1/AADApJwO/X8AADjc3QTZAQAAAQAAAK6rTx+gTJhIlCeCw08bwEgBABDXIwAAAMCknA79fwAAONzdBNkBAAAAAAAA2QEAAMCknA79fwAABJKUEf1/AADghuUf2QEAAAAAAADZAQAACAAAAAAAAADY4RDXIwAAAAAAqRH9fwAAHwGpEf1/AAAAAKkR/X8AAMCknA79fwAAwKScDv1/AAA43N0E2QEAAAEAAAA="/>
-				<Property Name="Interactive Music\x64_{4A188E6D-5897-4380-B94C-2C25C5F55EBC} - SegmentEditorZoomInfo" Type="string" Value="0bHSwr2s2D8AAAAAAADwPwAAAAAAnHJAAAAAAAAA8D8AAAAAAAAAAAAAAAAAEHlA"/>
+				<Property Name="Interactive Music\x64_{4A188E6D-5897-4380-B94C-2C25C5F55EBC} - SegmentEditorZoomInfo" Type="string" Value="0bHSwr2s2D8AAAAAAADwPwAAAAAAnHJAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>

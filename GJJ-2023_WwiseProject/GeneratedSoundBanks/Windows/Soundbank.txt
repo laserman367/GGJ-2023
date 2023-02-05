@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3141129795	Play_SFX			\Default Work Unit\Play_SFX	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	622737992	EnemyNumber			\Default Work Unit\EnemyNumber	
@@ -7,9 +8,31 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3677180323	Health			\Default Work Unit\Health	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	38345480	SFX_Tower1	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Tower1_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Tower\SFX_Tower1		6810
+	43310144	SFX_Shot_Water2	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Shot_Water2_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shot_Water\SFX_Shot_Water2		26940
+	63129385	SFX_Hit2	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Hit2_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Hit\SFX_Hit2		5893
+	89247586	SFX_Explosion1	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Explosion1_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Explosion\SFX_Explosion1		15274
+	155357631	SFX_Squish1	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Squish1_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Squish\SFX_Squish1		20421
+	196784689	SFX_Shot	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Shot_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shot\SFX_Shot		25542
+	230023723	SFX_Shot2	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Shot2_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shot\SFX_Shot2		14864
+	238229189	SFX_Roots	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Roots_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Roots		40992
+	297966472	SFX_Shot_Water1	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Shot_Water1_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shot_Water\SFX_Shot_Water1		31606
+	402335445	SFX_Squish2	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Squish2_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Squish\SFX_Squish2		12564
+	407755559	Shot_Needle	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Shot_Needle_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shot_Needle		14378
 	464707217	Bugs	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\Bugs_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Stems\Bugs		3235617
+	470179180	SFX_Shot_Air1	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Shot_Air1_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shot_Air\SFX_Shot_Air1		34444
+	528694261	SFX_Hit1	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Hit1_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Hit\SFX_Hit1		6333
+	701002158	SFX_Hit3	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Hit3_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Hit\SFX_Hit3		6449
+	718040069	SFX_Tower2	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Tower2_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Tower\SFX_Tower2		6795
+	726797932	SFX_Squish5	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Squish5_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Squish\SFX_Squish5		15748
+	775371507	SFX_Squish4	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Squish4_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Squish\SFX_Squish4		14259
+	781757616	SFX_Explosion2	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Explosion2_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Explosion\SFX_Explosion2		15386
 	791871811	Perc	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\Perc_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Stems\Perc		2126685
 	891896344	Melody	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\Melody_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Stems\Melody		989700
+	903876432	SFX_Tower3	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Tower3_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Tower\SFX_Tower3		5155
+	916609362	SFX_Shot_Air2	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Shot_Air2_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Shot_Air\SFX_Shot_Air2		14590
 	927853568	Main	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\Main_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Stems\Main		1597337
+	937393894	SFX_Hit4	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Hit4_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Hit\SFX_Hit4		11013
 	987866461	Basswoodblocks	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\Basswoodblocks_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Stems\Basswoodblocks		1444617
+	1018098849	SFX_Squish3	C:\Users\Omistaja\Documents\GitHub\GJJ-2023\GJJ-2023_WwiseProject\.cache\Windows\SFX\SFX_Squish3_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Squish\SFX_Squish3		10304
 

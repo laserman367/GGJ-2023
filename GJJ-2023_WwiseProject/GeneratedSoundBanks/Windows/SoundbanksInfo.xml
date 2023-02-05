@@ -27,13 +27,85 @@
 				<GameParameter Id="3677180323" Name="Health"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{1A836EC6-6A8E-C057-080F-C4294BBF7D3E}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{6EFFB3EE-8605-AC31-DA69-3F5FD427AA83}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
+				<File Id="38345480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Tower1.wav</ShortName>
+					<CachePath>SFX/SFX_Tower1_835714D9.wem</CachePath>
+				</File>
+				<File Id="43310144" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Shot_Water2.wav</ShortName>
+					<CachePath>SFX/SFX_Shot_Water2_835714D9.wem</CachePath>
+				</File>
+				<File Id="63129385" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Hit2.wav</ShortName>
+					<CachePath>SFX/SFX_Hit2_835714D9.wem</CachePath>
+				</File>
+				<File Id="89247586" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Explosion1.wav</ShortName>
+					<CachePath>SFX/SFX_Explosion1_835714D9.wem</CachePath>
+				</File>
+				<File Id="155357631" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Squish1.wav</ShortName>
+					<CachePath>SFX/SFX_Squish1_835714D9.wem</CachePath>
+				</File>
+				<File Id="196784689" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Shot.wav</ShortName>
+					<CachePath>SFX/SFX_Shot_835714D9.wem</CachePath>
+				</File>
+				<File Id="230023723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Shot2.wav</ShortName>
+					<CachePath>SFX/SFX_Shot2_835714D9.wem</CachePath>
+				</File>
+				<File Id="238229189" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Roots.wav</ShortName>
+					<CachePath>SFX/SFX_Roots_835714D9.wem</CachePath>
+				</File>
+				<File Id="297966472" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Shot_Water1.wav</ShortName>
+					<CachePath>SFX/SFX_Shot_Water1_835714D9.wem</CachePath>
+				</File>
+				<File Id="402335445" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Squish2.wav</ShortName>
+					<CachePath>SFX/SFX_Squish2_835714D9.wem</CachePath>
+				</File>
+				<File Id="407755559" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Shot_Needle.wav</ShortName>
+					<CachePath>SFX/SFX_Shot_Needle_835714D9.wem</CachePath>
+				</File>
 				<File Id="464707217" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bugs.wav</ShortName>
 					<CachePath>SFX/Bugs_179463A7.wem</CachePath>
+				</File>
+				<File Id="470179180" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Shot_Air1.wav</ShortName>
+					<CachePath>SFX/SFX_Shot_Air1_835714D9.wem</CachePath>
+				</File>
+				<File Id="528694261" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Hit1.wav</ShortName>
+					<CachePath>SFX/SFX_Hit1_835714D9.wem</CachePath>
+				</File>
+				<File Id="701002158" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Hit3.wav</ShortName>
+					<CachePath>SFX/SFX_Hit3_835714D9.wem</CachePath>
+				</File>
+				<File Id="718040069" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Tower2.wav</ShortName>
+					<CachePath>SFX/SFX_Tower2_835714D9.wem</CachePath>
+				</File>
+				<File Id="726797932" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Squish5.wav</ShortName>
+					<CachePath>SFX/SFX_Squish5_835714D9.wem</CachePath>
+				</File>
+				<File Id="775371507" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Squish4.wav</ShortName>
+					<CachePath>SFX/SFX_Squish4_835714D9.wem</CachePath>
+				</File>
+				<File Id="781757616" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Explosion2.wav</ShortName>
+					<CachePath>SFX/SFX_Explosion2_835714D9.wem</CachePath>
 				</File>
 				<File Id="791871811" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Perc.wav</ShortName>
@@ -43,13 +115,29 @@
 					<ShortName>Melody.wav</ShortName>
 					<CachePath>SFX/Melody_179463A7.wem</CachePath>
 				</File>
+				<File Id="903876432" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Tower3.wav</ShortName>
+					<CachePath>SFX/SFX_Tower3_835714D9.wem</CachePath>
+				</File>
+				<File Id="916609362" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Shot_Air2.wav</ShortName>
+					<CachePath>SFX/SFX_Shot_Air2_835714D9.wem</CachePath>
+				</File>
 				<File Id="927853568" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Main.wav</ShortName>
 					<CachePath>SFX/Main_179463A7.wem</CachePath>
 				</File>
+				<File Id="937393894" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Hit4.wav</ShortName>
+					<CachePath>SFX/SFX_Hit4_835714D9.wem</CachePath>
+				</File>
 				<File Id="987866461" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Basswoodblocks.wav</ShortName>
 					<CachePath>SFX/Basswoodblocks_179463A7.wem</CachePath>
+				</File>
+				<File Id="1018098849" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Squish3.wav</ShortName>
+					<CachePath>SFX/SFX_Squish3_835714D9.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -62,6 +150,32 @@
 						<MediaRef Id="987866461"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3141129795" Name="Play_SFX" DurationType="OneShot" DurationMin="0.15684745" DurationMax="0.93483335">
+					<MediaRefs>
+						<MediaRef Id="38345480"/>
+						<MediaRef Id="43310144"/>
+						<MediaRef Id="63129385"/>
+						<MediaRef Id="89247586"/>
+						<MediaRef Id="155357631"/>
+						<MediaRef Id="196784689"/>
+						<MediaRef Id="230023723"/>
+						<MediaRef Id="238229189"/>
+						<MediaRef Id="297966472"/>
+						<MediaRef Id="402335445"/>
+						<MediaRef Id="407755559"/>
+						<MediaRef Id="470179180"/>
+						<MediaRef Id="528694261"/>
+						<MediaRef Id="701002158"/>
+						<MediaRef Id="718040069"/>
+						<MediaRef Id="726797932"/>
+						<MediaRef Id="775371507"/>
+						<MediaRef Id="781757616"/>
+						<MediaRef Id="903876432"/>
+						<MediaRef Id="916609362"/>
+						<MediaRef Id="937393894"/>
+						<MediaRef Id="1018098849"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="622737992" Name="EnemyNumber"/>
@@ -70,5 +184,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B0E0CFC4-D4C3-4015-05EC-DD00DE2D9953}</FileHash>
+	<FileHash>{FD66F6DE-14A5-55A9-87F7-CBEAA83EAA19}</FileHash>
 </SoundBanksInfo>
