@@ -14,12 +14,100 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_SFX" ID="{E1FC76C9-F75E-4B71-A3CD-EE045748015D}">
+				<Event Name="Play_Tower" ID="{E1FC76C9-F75E-4B71-A3CD-EE045748015D}">
 					<ChildrenList>
 						<Action Name="" ID="{BC4A6154-3CB8-4A21-AB7F-66291E4B780C}" ShortID="337038810">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX" ID="{A4FDD63A-C0F0-4CB0-9E45-1FB925B6E32D}" WorkUnitID="{E5380D74-47CE-45CE-9B42-D824455DCE81}"/>
+									<ObjectRef Name="Tower" ID="{A3751F47-07B6-4C77-A55E-612D02EDC7B6}" WorkUnitID="{E5380D74-47CE-45CE-9B42-D824455DCE81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Hit" ID="{D0CE6297-43BC-4B28-B3F7-A9FD7CF76F84}">
+					<ChildrenList>
+						<Action Name="" ID="{32DCA580-CF09-476A-962E-CA52131CD4B8}" ShortID="388986531">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hit" ID="{382E3886-D6C8-4800-B913-D0A15DC45A4D}" WorkUnitID="{E5380D74-47CE-45CE-9B42-D824455DCE81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Squish" ID="{69394A01-D2FC-4F78-B685-F4B9D0C4003B}">
+					<ChildrenList>
+						<Action Name="" ID="{4B72B691-E55A-40F8-AC7D-853CAE28AE7C}" ShortID="168569410">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Squish" ID="{3B01B18A-DF64-4166-90C3-A0830B5CDD60}" WorkUnitID="{E5380D74-47CE-45CE-9B42-D824455DCE81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Shot_Water" ID="{8AE746A8-7FF8-4237-AC93-7A2189C1AB24}">
+					<ChildrenList>
+						<Action Name="" ID="{C3E42C02-5DCB-4C00-8F39-F1CF72BF3DB9}" ShortID="1054348636">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shot_Water" ID="{617AFB50-E61A-47E5-884D-870C1AB189F4}" WorkUnitID="{E5380D74-47CE-45CE-9B42-D824455DCE81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Shot" ID="{5CF50497-7354-4D47-B579-234629C7B6D9}">
+					<ChildrenList>
+						<Action Name="" ID="{24C56DDC-C0FD-4ED2-9BC4-06AFEBEDDE70}" ShortID="53372392">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shot" ID="{FF705B51-9F3C-45DE-A9DA-AB8FA3768967}" WorkUnitID="{E5380D74-47CE-45CE-9B42-D824455DCE81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Shot_Air" ID="{01D94BFC-3831-4953-A468-79153D15F80A}">
+					<ChildrenList>
+						<Action Name="" ID="{51427B85-D25B-4689-B766-5A5F555CB7D8}" ShortID="979918716">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shot_Air" ID="{DF85A844-9EE6-4775-A535-458896F1618C}" WorkUnitID="{E5380D74-47CE-45CE-9B42-D824455DCE81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Explosion" ID="{41211246-D779-46B3-BC3F-8EFC3BE458B8}">
+					<ChildrenList>
+						<Action Name="" ID="{04D8ECBB-0C49-44B2-BA58-116B26FD6532}" ShortID="845999344">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explosion" ID="{701A11B7-68B6-494E-8EDA-3EF658B25D7D}" WorkUnitID="{E5380D74-47CE-45CE-9B42-D824455DCE81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Roots" ID="{312834EC-5605-407E-9CDA-C2F5576A5870}">
+					<ChildrenList>
+						<Action Name="" ID="{5376FE66-FB15-4314-A537-EAD098C25718}" ShortID="978994905">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Roots" ID="{EB3B9629-1440-47BA-8F41-056CD0F28AB6}" WorkUnitID="{E5380D74-47CE-45CE-9B42-D824455DCE81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Needle" ID="{ECCC98C0-FA1D-45C2-A984-B3D5CDB66BB6}">
+					<ChildrenList>
+						<Action Name="" ID="{965BB906-F7A6-443D-804A-E03DFF4894C8}" ShortID="535956725">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shot_Needle" ID="{466D55E9-E678-45F4-BF2C-C252E522B2DB}" WorkUnitID="{E5380D74-47CE-45CE-9B42-D824455DCE81}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

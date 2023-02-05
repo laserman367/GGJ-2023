@@ -1,6 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
+	268953978	Play_Shot			\Default Work Unit\Play_Shot	
+	855516395	Play_Needle			\Default Work Unit\Play_Needle	
+	1255964005	Play_Squish			\Default Work Unit\Play_Squish	
+	1791503121	Play_Tower			\Default Work Unit\Play_Tower	
+	2030083510	Play_Shot_Water			\Default Work Unit\Play_Shot_Water	
+	2135754993	Play_Roots			\Default Work Unit\Play_Roots	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
-	3141129795	Play_SFX			\Default Work Unit\Play_SFX	
+	2960666077	Play_Hit			\Default Work Unit\Play_Hit	
+	3191847951	Play_Shot_Air			\Default Work Unit\Play_Shot_Air	
+	4030404899	Play_Explosion			\Default Work Unit\Play_Explosion	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	622737992	EnemyNumber			\Default Work Unit\EnemyNumber	

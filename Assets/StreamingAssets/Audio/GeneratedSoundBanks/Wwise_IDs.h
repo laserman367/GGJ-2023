@@ -13,8 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_EXPLOSION = 4030404899U;
+        static const AkUniqueID PLAY_HIT = 2960666077U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
-        static const AkUniqueID PLAY_SFX = 3141129795U;
+        static const AkUniqueID PLAY_NEEDLE = 855516395U;
+        static const AkUniqueID PLAY_ROOTS = 2135754993U;
+        static const AkUniqueID PLAY_SHOT = 268953978U;
+        static const AkUniqueID PLAY_SHOT_AIR = 3191847951U;
+        static const AkUniqueID PLAY_SHOT_WATER = 2030083510U;
+        static const AkUniqueID PLAY_SQUISH = 1255964005U;
+        static const AkUniqueID PLAY_TOWER = 1791503121U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

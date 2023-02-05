@@ -27,7 +27,7 @@
 				<GameParameter Id="3677180323" Name="Health"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{6EFFB3EE-8605-AC31-DA69-3F5FD427AA83}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{2165E6B4-9BE7-0558-1213-6D7E49142F18}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
@@ -141,6 +141,20 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="4030404899" Name="Play_Explosion" DurationType="OneShot" DurationMin="0.49553788" DurationMax="0.61314386">
+					<MediaRefs>
+						<MediaRef Id="89247586"/>
+						<MediaRef Id="781757616"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2960666077" Name="Play_Hit" DurationType="OneShot" DurationMin="0.15684745" DurationMax="0.28271502">
+					<MediaRefs>
+						<MediaRef Id="63129385"/>
+						<MediaRef Id="528694261"/>
+						<MediaRef Id="701002158"/>
+						<MediaRef Id="937393894"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="464707217"/>
@@ -150,30 +164,48 @@
 						<MediaRef Id="987866461"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3141129795" Name="Play_SFX" DurationType="OneShot" DurationMin="0.15684745" DurationMax="0.93483335">
+				<Event Id="855516395" Name="Play_Needle" DurationType="OneShot" DurationMin="0.5448157" DurationMax="0.6397175">
 					<MediaRefs>
-						<MediaRef Id="38345480"/>
-						<MediaRef Id="43310144"/>
-						<MediaRef Id="63129385"/>
-						<MediaRef Id="89247586"/>
-						<MediaRef Id="155357631"/>
+						<MediaRef Id="407755559"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2135754993" Name="Play_Roots" DurationType="OneShot" DurationMin="0.89371806" DurationMax="0.93382555">
+					<MediaRefs>
+						<MediaRef Id="238229189"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="268953978" Name="Play_Shot" DurationType="OneShot" DurationMin="0.53098345" DurationMax="0.7557945">
+					<MediaRefs>
 						<MediaRef Id="196784689"/>
 						<MediaRef Id="230023723"/>
-						<MediaRef Id="238229189"/>
-						<MediaRef Id="297966472"/>
-						<MediaRef Id="402335445"/>
-						<MediaRef Id="407755559"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3191847951" Name="Play_Shot_Air" DurationType="OneShot" DurationMin="0.5508958" DurationMax="0.93483335">
+					<MediaRefs>
 						<MediaRef Id="470179180"/>
-						<MediaRef Id="528694261"/>
-						<MediaRef Id="701002158"/>
-						<MediaRef Id="718040069"/>
+						<MediaRef Id="916609362"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2030083510" Name="Play_Shot_Water" DurationType="OneShot" DurationMin="0.6831667" DurationMax="0.76927084">
+					<MediaRefs>
+						<MediaRef Id="43310144"/>
+						<MediaRef Id="297966472"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1255964005" Name="Play_Squish" DurationType="OneShot" DurationMin="0.27970833" DurationMax="0.517">
+					<MediaRefs>
+						<MediaRef Id="155357631"/>
+						<MediaRef Id="402335445"/>
 						<MediaRef Id="726797932"/>
 						<MediaRef Id="775371507"/>
-						<MediaRef Id="781757616"/>
-						<MediaRef Id="903876432"/>
-						<MediaRef Id="916609362"/>
-						<MediaRef Id="937393894"/>
 						<MediaRef Id="1018098849"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1791503121" Name="Play_Tower" DurationType="OneShot" DurationMin="0.22208333" DurationMax="0.31266665">
+					<MediaRefs>
+						<MediaRef Id="38345480"/>
+						<MediaRef Id="718040069"/>
+						<MediaRef Id="903876432"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -184,5 +216,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FD66F6DE-14A5-55A9-87F7-CBEAA83EAA19}</FileHash>
+	<FileHash>{3E406809-61A2-34FB-DD40-265AE9CC3923}</FileHash>
 </SoundBanksInfo>

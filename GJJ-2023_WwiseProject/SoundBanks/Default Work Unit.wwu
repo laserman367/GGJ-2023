@@ -5,8 +5,16 @@
 			<ChildrenList>
 				<SoundBank Name="Soundbank" ID="{825AAD7C-B8C4-48EF-ACEE-342717575B92}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Roots" ID="{312834EC-5605-407E-9CDA-C2F5576A5870}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Shot_Water" ID="{8AE746A8-7FF8-4237-AC93-7A2189C1AB24}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Needle" ID="{ECCC98C0-FA1D-45C2-A984-B3D5CDB66BB6}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Explosion" ID="{41211246-D779-46B3-BC3F-8EFC3BE458B8}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music" ID="{0BA74D1E-9B69-46DA-AA75-F2E46561E1F2}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_SFX" ID="{E1FC76C9-F75E-4B71-A3CD-EE045748015D}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Shot_Air" ID="{01D94BFC-3831-4953-A468-79153D15F80A}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hit" ID="{D0CE6297-43BC-4B28-B3F7-A9FD7CF76F84}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Tower" ID="{E1FC76C9-F75E-4B71-A3CD-EE045748015D}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Shot" ID="{5CF50497-7354-4D47-B579-234629C7B6D9}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Squish" ID="{69394A01-D2FC-4F78-B685-F4B9D0C4003B}" WorkUnitID="{C69A85DB-AF4D-475B-822F-973CD7E994FC}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

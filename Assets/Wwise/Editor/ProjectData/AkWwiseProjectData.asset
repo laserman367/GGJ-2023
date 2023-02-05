@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 25574a016968ef4eabf654ed1ef4f45c
     GuidInternal: 
-    m_lastTime: -8585260082637064630
+    m_lastTime: -8585260063929338502
     List:
     - name: Soundbank
       guid: 7cad5a82c4b8ef48acee342717575b92
@@ -94,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: db859ac64daf5b47822f973cd7e994fc
     GuidInternal: 
-    m_lastTime: -8585260083119878793
+    m_lastTime: -8585260064218520903
     List:
+    - name: Play_Explosion
+      guid: 4612214179d7b346bc3f8efc3be458b8
+      id: 4030404899
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: db859ac64daf5b47822f973cd7e994fc
+      - ElementName: Play_Explosion
+        ObjectType: 3
+        guid: 4612214179d7b346bc3f8efc3be458b8
+      Path: Events\Default Work Unit\Play_Explosion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Hit
+      guid: 9762ced0bc43284bb3f7a9fd7cf76f84
+      id: 2960666077
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: db859ac64daf5b47822f973cd7e994fc
+      - ElementName: Play_Hit
+        ObjectType: 3
+        guid: 9762ced0bc43284bb3f7a9fd7cf76f84
+      Path: Events\Default Work Unit\Play_Hit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Music
       guid: 1e4da70b699bda46aa75f2e46561e1f2
       id: 2932040671
@@ -113,9 +147,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_SFX
-      guid: c976fce15ef7714ba3cdee045748015d
-      id: 3141129795
+    - name: Play_Needle
+      guid: c098ccec1dfac245a984b3d5cdb66bb6
+      id: 855516395
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -123,10 +157,112 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: db859ac64daf5b47822f973cd7e994fc
-      - ElementName: Play_SFX
+      - ElementName: Play_Needle
+        ObjectType: 3
+        guid: c098ccec1dfac245a984b3d5cdb66bb6
+      Path: Events\Default Work Unit\Play_Needle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Roots
+      guid: ec34283105567e409cdac2f5576a5870
+      id: 2135754993
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: db859ac64daf5b47822f973cd7e994fc
+      - ElementName: Play_Roots
+        ObjectType: 3
+        guid: ec34283105567e409cdac2f5576a5870
+      Path: Events\Default Work Unit\Play_Roots
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Shot
+      guid: 9704f55c5473474db579234629c7b6d9
+      id: 268953978
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: db859ac64daf5b47822f973cd7e994fc
+      - ElementName: Play_Shot
+        ObjectType: 3
+        guid: 9704f55c5473474db579234629c7b6d9
+      Path: Events\Default Work Unit\Play_Shot
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Shot_Air
+      guid: fc4bd90131385349a46879153d15f80a
+      id: 3191847951
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: db859ac64daf5b47822f973cd7e994fc
+      - ElementName: Play_Shot_Air
+        ObjectType: 3
+        guid: fc4bd90131385349a46879153d15f80a
+      Path: Events\Default Work Unit\Play_Shot_Air
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Shot_Water
+      guid: a846e78af87f3742ac937a2189c1ab24
+      id: 2030083510
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: db859ac64daf5b47822f973cd7e994fc
+      - ElementName: Play_Shot_Water
+        ObjectType: 3
+        guid: a846e78af87f3742ac937a2189c1ab24
+      Path: Events\Default Work Unit\Play_Shot_Water
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Squish
+      guid: 014a3969fcd2784fb685f4b9d0c4003b
+      id: 1255964005
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: db859ac64daf5b47822f973cd7e994fc
+      - ElementName: Play_Squish
+        ObjectType: 3
+        guid: 014a3969fcd2784fb685f4b9d0c4003b
+      Path: Events\Default Work Unit\Play_Squish
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Tower
+      guid: c976fce15ef7714ba3cdee045748015d
+      id: 1791503121
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: db859ac64daf5b47822f973cd7e994fc
+      - ElementName: Play_Tower
         ObjectType: 3
         guid: c976fce15ef7714ba3cdee045748015d
-      Path: Events\Default Work Unit\Play_SFX
+      Path: Events\Default Work Unit\Play_Tower
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
