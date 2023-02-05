@@ -24,7 +24,10 @@ public class BasicEnemy : MonoBehaviour
 	private SpriteRenderer spriteRenderer = null;
 	[SerializeField]
 	private Tree tree;
+	[SerializeField]
+	private float damage;
 	private bool isLeftOfTree = false;
+	public bool IsLeftOfTree { get { return isLeftOfTree; } }
     void Start()
     {
 		currHealth = maxHealth;
@@ -58,7 +61,11 @@ public class BasicEnemy : MonoBehaviour
 	}
 	private void Attack()
 	{
-
+		tree.Damage(damage);
+		if (enemyType == EnemyType.MAGGOT)
+		{
+			EnemyManager.Instance.RemoveEnemy(this);
+		}
 	}
 	public void SetTree(Tree tree)
 	{ 

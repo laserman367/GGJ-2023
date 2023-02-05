@@ -40,6 +40,18 @@ public class TreeNode : MonoBehaviour
     {
         
     }
+	public void TryAttachDefense(int type)
+	{
+		GameObject defenseObj = GameManager.Instance.RequestDefense(type);
+		if (defenseObj != null)
+		{
+			GameObject.Instantiate(defenseObj);
+			defenseObj.transform.position = transform.position;
+			attachedDefense = defenseObj.GetComponent<BasicDefense>();
+			upgradeUI.SetActive(false);
+			isUpgrading = false;
+		}
+	}
     public bool AttachDefense(BasicDefense defense)
     {
         if (attachedDefense != null) return false;

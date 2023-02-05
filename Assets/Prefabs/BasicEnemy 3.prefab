@@ -70,10 +70,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -890888013
+  m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d0e23f815acdfb24db093232ec6c87ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f02f59860d0c60a4eb70fbd7b6380aff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6496250101173400370}
   - component: {fileID: 6496250101173400371}
+  - component: {fileID: 5374709938134366212}
   m_Layer: 0
   m_Name: BasicEnemy 3
   m_TagString: Untagged
@@ -140,3 +141,17 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f02f59860d0c60a4eb70fbd7b6380aff, type: 3}
   spriteRenderer: {fileID: 6496250100403474189}
   tree: {fileID: 0}
+  damage: 20
+--- !u!65 &5374709938134366212
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6496250101173400372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.35, z: 0.3}
+  m_Center: {x: 0, y: -0.3, z: 0}

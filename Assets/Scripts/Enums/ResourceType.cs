@@ -7,7 +7,5 @@ public enum ResourceType
     OXYGEN,
     HYDROGEN,
     CARBON,
-    NITROGEN,
-    PHOSPHORUS,
-    POTASSIUM
+    NUTRIENTS
 }

@@ -14,3 +14,7 @@ public class TypeFloatDict : SerializableDictionary<ResourceType, float>
 public class GameObjectIntDict : SerializableDictionary<GameObject, int>
 {
 }
+
+public class DefenseTypePrefabDict : SerializableDictionary<DefenseType, GameObject>
+{
+}

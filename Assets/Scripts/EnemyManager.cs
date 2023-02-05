@@ -28,6 +28,7 @@ public class EnemyManager : MonoBehaviour
 	public bool IsSpawning { get { return toSpawnList.Count > 0; } }
 
 	private List<BasicEnemy> enemyList = new List<BasicEnemy>();
+	public List<BasicEnemy> EnemyList { get { return enemyList; } }
 	private List<BasicEnemy> toSpawnList = new List<BasicEnemy>();
 	
 	public static EnemyManager Instance
@@ -113,5 +114,14 @@ public class EnemyManager : MonoBehaviour
 			}
 		}
 		if(leftBudget+rightBudget > enemyCostList[0]) SpawnEnemy(0, leftBudget>rightBudget);
+	}
+
+	public BasicEnemy CheckForEnemy(Vector3 position, float range)
+	{
+		foreach(var enemy in enemyList)
+		{
+			if (Vector3.Distance(new Vector3(position.x, position.y, 0), new Vector3(enemy.transform.position.x, enemy.transform.position.y, 0)) <= range) return enemy;
+		}
+		return null;
 	}
 }

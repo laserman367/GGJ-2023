@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6496250100403474190
+--- !u!1 &6562487652224477250
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6496250100403474188}
-  - component: {fileID: 6496250100403474189}
+  - component: {fileID: 6562487652224477251}
+  - component: {fileID: 6562487652224477248}
   m_Layer: 0
-  m_Name: EnemySprite
+  m_Name: SpriteObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6496250100403474188
+--- !u!4 &6562487652224477251
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6496250100403474190}
+  m_GameObject: {fileID: 6562487652224477250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.27, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalPosition: {x: 0.072, y: 0.086, z: 0}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6496250101173400370}
+  m_Father: {fileID: 6562487653018813211}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6496250100403474189
+--- !u!212 &6562487652224477248
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6496250100403474190}
+  m_GameObject: {fileID: 6562487652224477250}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -70,21 +70,21 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -890888013
-  m_SortingLayer: 1
+  m_SortingLayerID: 456066107
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d0e23f815acdfb24db093232ec6c87ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6371a80b8025bb440a42838dc46d4270, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.43, y: 1.62}
+  m_Size: {x: 1.63, y: 1.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &6496250101173400372
+--- !u!1 &6562487653018813213
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,66 +92,58 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6496250101173400370}
-  - component: {fileID: 6496250101173400371}
-  - component: {fileID: 810290014390863693}
+  - component: {fileID: 6562487653018813211}
+  - component: {fileID: 6562487653018813210}
   m_Layer: 0
-  m_Name: BasicEnemy
+  m_Name: WaterShooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6496250101173400370
+--- !u!4 &6562487653018813211
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6496250101173400372}
+  m_GameObject: {fileID: 6562487653018813213}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.52, y: 7.72, z: -0.179}
+  m_LocalPosition: {x: -5.81, y: 8.92, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6496250100403474188}
+  - {fileID: 6562487652224477251}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6496250101173400371
+--- !u!114 &6562487653018813210
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6496250101173400372}
+  m_GameObject: {fileID: 6562487653018813213}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c16a74dd71b742e4f95806b6212d082e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f6181ef845efe4418ec2c3dfd395b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0.4
-  attackDelay: 1
-  attackRange: 1
-  maxHealth: 100
-  enemyType: 0
-  sprites:
-  - {fileID: 21300000, guid: d0e23f815acdfb24db093232ec6c87ff, type: 3}
-  - {fileID: 21300000, guid: 264d48f9083eaf84798444cfc08b2bab, type: 3}
-  - {fileID: 21300000, guid: f02f59860d0c60a4eb70fbd7b6380aff, type: 3}
-  spriteRenderer: {fileID: 6496250100403474189}
-  tree: {fileID: 0}
-  damage: 1
---- !u!65 &810290014390863693
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6496250101173400372}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.35, z: 0.3}
-  m_Center: {x: 0, y: -0.3, z: 0}
+  attackDelay: 0.4
+  damage: 4
+  range: 5
+  knockBack: 0.02
+  projectileSpeed: 0.8
+  buildCost:
+    m_keys: 030000000200000001000000
+    m_values:
+    - 30
+    - 10
+    - 20
+  projectileCost:
+    m_keys: 0000000001000000
+    m_values:
+    - 1
+    - 2
+  projectilePrefab: {fileID: 4961514013866847027, guid: abf3f845797a08947b1948706cb9587e, type: 3}
+  projectileSprite: {fileID: 21300000, guid: 06fdf6fa339e2ab478cf96ce5b17d3b0, type: 3}

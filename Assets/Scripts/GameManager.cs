@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
@@ -21,15 +22,22 @@ public class GameManager : MonoBehaviour
 	private int waveCounter=0;
 	[SerializeField]
 	private TypeFloatDict resources;
+	[SerializeField]
+	private float maxResourcePerType;
+	[SerializeField]
+	private Scrollbar[] scrollBars= null;
 	private float oxygenGain = 5;
 	private float carbonGain = 2.5f;
 	private bool isMovingRoot = false;
 	private RootJoint attachedJoint;
-	private int layerMask;
+	private int layermask;
 	Dictionary<ResourceType, float> totalDrain = new Dictionary<ResourceType, float>();
 	private bool isAddingRoot = false;
 	[SerializeField]
 	private float rootCost = 30;
+	[SerializeField]
+	private GameObject[] defenseTypePrefabArr = null;
+
 
 	[SerializeField]
 	private GameObject rootPrefab = null;
@@ -41,8 +49,10 @@ public class GameManager : MonoBehaviour
 		{
 			totalDrain.Add(kvp.Key, 0);
 		}
-		layerMask = LayerMask.GetMask("UI");
-		if (rootPrefab == null) Debug.LogWarning("Root prefab not set in gamemanager!");
+		layermask = LayerMask.GetMask("UI","TreeNodes");
+		if (rootPrefab == null) Debug.LogWarning("Game manager does not have Root Prefab set");
+		if (scrollBars == null || scrollBars.Length< resources.Count) Debug.LogError("Game manager does not have Resource Bars set.");
+		if (defenseTypePrefabArr == null || defenseTypePrefabArr.Length <= 0) Debug.LogError("Game manager does not have defense prefabs set.");
 	}
 
 	// Update is called once per frame
@@ -62,6 +72,12 @@ public class GameManager : MonoBehaviour
 		{
 			Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			attachedJoint.transform.position = new Vector3(mousePos.x, mousePos.y, attachedJoint.transform.position.z);
+		}
+		int iteration = 0;
+		foreach (KeyValuePair<ResourceType,float> kvp in resources)
+		{
+			scrollBars[iteration].size = kvp.Value / maxResourcePerType;
+			iteration++;
 		}
 	}
 	public bool TryDrainGroup(Dictionary<ResourceType, float> group)
@@ -107,12 +123,33 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public void AddResource(ResourceType type, float value)
+	{
+		resources[type] += value;
+	}
 	public void CreateRoot()
 	{
+		if (isAddingRoot)
+		{
+			isAddingRoot = false;
+			GameObject.Destroy(attachedJoint.gameObject);
+			attachedJoint = null;
+			AddResource(ResourceType.CARBON, rootCost);
+			return;
+		}
 		if (isMovingRoot || rootPrefab == null || !TryDrain(ResourceType.CARBON, rootCost)) return;
 		isAddingRoot = true;
 		GameObject rootObj = Instantiate(rootPrefab);
 		attachedJoint = rootObj.GetComponent<RootJoint>();
+	}
+
+	public GameObject RequestDefense(int type)
+	{
+		if(TryDrainGroup(defenseTypePrefabArr[type].GetComponent<BasicDefense>().BuildCost))
+		{
+			return defenseTypePrefabArr[type];
+		}
+		return null;
 	}
 	private void HandleClick()
 	{
@@ -120,7 +157,7 @@ public class GameManager : MonoBehaviour
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hitInfo;
-			if (Physics.Raycast(ray, out hitInfo, 100, layerMask))
+			if (Physics.Raycast(ray, out hitInfo, 100, layermask))
 			{
 				RootJoint joint = null;
 				if (hitInfo.transform.parent != null)
@@ -142,20 +179,23 @@ public class GameManager : MonoBehaviour
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hitInfo;
-			if(Physics.Raycast(ray, out hitInfo,100, layerMask))
+			if(Physics.Raycast(ray, out hitInfo,100, layermask))
 			{
 				RootJoint joint = null;
+				TreeNode node = hitInfo.transform.gameObject.GetComponent<TreeNode>();
 				if (hitInfo.transform.parent != null)
 				{
 					joint = hitInfo.transform.parent.gameObject.GetComponent<RootJoint>();
+					if (joint != null)
+					{
+						attachedJoint = joint;
+						isMovingRoot = true;
+						attachedJoint.ToggleDrag();
+					}
 				}
-
-
-				if (joint != null)
+				if(node != null)
 				{
-					attachedJoint = joint;
-					isMovingRoot = true;
-					attachedJoint.ToggleDrag();
+					node.HandleClick();
 				}
 			}
 		}

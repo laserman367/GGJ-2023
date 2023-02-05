@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -12,8 +13,8 @@ TagManager:
   - Water
   - UI
   - Resources
-  - 
-  - 
+  - Bounds
+  - TreeNodes
   - 
   - 
   - 
@@ -40,4 +41,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Enemies
+    uniqueID: 3404079283
+    locked: 0
+  - name: TreeNodes
+    uniqueID: 2814804853
+    locked: 0
+  - name: Turrets
+    uniqueID: 456066107
+    locked: 0
+  - name: Projectiles
+    uniqueID: 4064689657
     locked: 0
